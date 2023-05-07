@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th=http://www.thymeleaf.org>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="static/css/login.css">
+</head>
+<body>
+<div class="taskbar">
+    <span style="width: 10px;height: 100%"></span>
+    <span style="font-size: 20px;">设备管理系统</span>
+    <span style="width: 60%;height: 100%"></span>
+    <a href="/index"><button style="margin-top:4px;border-radius: 4px;border: none;height: 85%;width: 100px;font-size: 20px">主页</button></a>
+    <span style="width: 20px;height: 100%"></span>
+    <a href="/login"><button style="margin-top:4px;border-radius: 4px;border: none;height: 85%;width: 100px;font-size: 20px">登录</button></a>
+    <span style="width: 20px;height: 100%"></span>
+    <a href="/home"><button style="margin-top:4px;border-radius: 4px;border: none;height: 85%;width: 100px;font-size: 20px">我的信息</button></a>
+</div>
+<div class="show">
+    <div class="img" style="background-image: url('static/img/1.jpg');background-size: contain"></div>
+    <div class="img" style="background-image: url('static/img/2.jpg');background-size: contain"></div>
+    <div class="img" style="background-image: url('static/img/3.jpg');background-size: contain"></div>
+</div>
+
+<div class="login" style="background-image: url('static/img/login.jpg');width: 1200px;height: 356px;">
+
+    <div style="margin-left: 300px;margin-top: 30px;background-color: rgba(255,255,255,0.8);width: 300px;height: 320px">
+        <div style="margin: 100px auto;height: auto;width: 80px" >
+            <span>高 效 负 责</span><br>
+            <span>安 全 可 靠</span><br>
+            <span>放 心 售 后</span>
+        </div>
+    </div>
+    <div class="box_login">
+        <div style="margin-top: 40px">
+            <div style="border-radius: 4px;border: none;background-color: rgba(255,255,255,0);width: 230px;height: 50px;margin: 10px auto;text-align: center;">
+                <span style="line-height: 70px;font-size: 22px;">欢迎登录设备管理系统!</span>
+            </div>
+            <div>
+                <form style="margin-left: 50px;font-size: 20px;" action="dologin" method="post">
+                    <input style="height: 25px;width: 200px" placeholder="账号：" type="text" name="username"><br>
+                    <input style="height: 25px;width: 200px" placeholder="密码：" type="password" name="password"><br>
+                    <input style="height: 23px;width: 200px"  type="hidden" name="role" value="user"><br>
+                    <button type="submit" style="border-radius: 4px;border: none;margin-left: 60px;width: 80px;height: 30px;font-size: 20px">登录</button>
+                </form>
+                <a href="/register"><button style="margin-top:10px;border-radius: 4px;border: none;margin-left: 110px;width: 80px;height: 30px;font-size: 20px">注册</button></a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="taskbar" style="text-align: center;justify-content: center;">
+    <span>@该设备管理系统由郭韦刚，蔡天赐，徐文军，张奥举共同开发，侵权必纠</span>
+</div>
+</body>
+</html>

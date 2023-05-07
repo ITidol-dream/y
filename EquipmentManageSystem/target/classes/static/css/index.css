@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.taskbar{
+    width: 1200px;
+    height: 50px;
+    background-color: slategray;
+    display: flex;
+    line-height: 50px;
+    margin: 0 auto;
+}
+.show{
+    width: 1200px;
+    height: 200px;
+    display: flex;
+    margin: 0 auto;
+}
+.show .img{
+    width: 400px;
+}
+
+.login{
+    display: flex;
+    margin: 0 auto;
+}
+.box_login{
+    margin-top: 20px;
+    background-color:rgba(255,255,255,0.6);
+    width: 300px;
+    height: 320px;
+
+    border: none;
+}
+.box_login input{
+    border-radius: 4px;
+    border: none;
+}
